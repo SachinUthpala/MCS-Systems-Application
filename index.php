@@ -102,10 +102,9 @@
     <div class="container-xxl py-5" >
         <div class="container">
             <div class="row g-4 align-items-end mb-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" src="img/about.jpg">
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">About Us</p>
                     <h1 class="display-5 mb-4">Powering the Future of Banking with Smart IT & Automation</h1>
                     <p class="mb-4">We are driven by a passion for excellence and innovation. Our team of skilled professionals is dedicated to pushing the boundaries of technology and creating future-ready solutions that empower our clients to stay ahead in a rapidly evolving digital landscape.</p>
@@ -133,6 +132,11 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/about.jpg">
+                </div>
+                
             </div>
             <div class="border rounded p-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="row g-4">
@@ -616,6 +620,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="./js/Validation.js"></script>
 </body>
 
 </html>

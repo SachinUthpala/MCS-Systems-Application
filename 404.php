@@ -112,6 +112,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+      <script src="./js/Validation.js"></script>
 </body>
 
 </html>
