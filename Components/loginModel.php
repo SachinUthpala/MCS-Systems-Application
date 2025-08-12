@@ -25,13 +25,13 @@
 <button class="btn btn-google btn-block mb-2 w-100 p-2"><i class="fab fa-google"></i> Continive With Google</button>
 <p class="text-center">- OR -</p>
               <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="name" placeholder="Your Email" required>
                                     <label for="name">Your Email</label>
                                 </div>
 
 
                                  <div class="form-floating mb-4">
-                                    <input type="text" class="form-control" id="password" placeholder="Your Password">
+                                    <input type="password" class="form-control" id="password" placeholder="Your Password" required>
                                     <label for="password">Your Password</label>
                                 </div>
 
@@ -57,20 +57,20 @@
 <p class="text-center">- OR -</p>
   <form>
     <div class="form-floating mb-4">
-      <input type="text" class="form-control" id="sEmail" placeholder="Your Email">
+      <input type="email" class="form-control" id="sEmail" placeholder="Your Email" required>
       <label for="sEmail">Your Email</label>
     </div>
 
-    <div class="row g-3">
+    <div class="row g-3 mb-4">
       <div class="col-md-6">
-        <div class="form-floating mb-4">
-          <input type="password" class="form-control" id="spassword" placeholder="Your Password">
+        <div class="form-floating ">
+          <input type="password" class="form-control" id="spassword" placeholder="Your Password" required >
           <label for="spassword">Your Password</label>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="form-floating mb-4">
-          <input type="text" class="form-control" id="srpassword" placeholder="Re Enter Password">
+        <div class="form-floating ">
+          <input type="password" class="form-control" id="srpassword" placeholder="Re Enter Password" required >
           <label for="srpassword">Re Enter Password</label>
         </div>
       </div>

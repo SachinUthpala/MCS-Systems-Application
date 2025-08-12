@@ -594,6 +594,14 @@ h6,
 
 
   /* Increase modal width */
+
+    #exampleModal{
+
+        background-color: #000b1c8e;
+
+
+    }
+
   #exampleModal .modal-dialog {
     max-width: 600px; /* default is ~500px */
   }
