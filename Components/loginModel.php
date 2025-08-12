@@ -1,0 +1,95 @@
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">SignIn / SignUp To MCS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="background-color: transparent !important;">
+
+        <!-- Pills navs -->
+        <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="tab-login" data-bs-toggle="pill" href="#pills-login" role="tab"
+              aria-controls="pills-login" aria-selected="true">Login</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab-register" data-bs-toggle="pill" href="#pills-register" role="tab"
+              aria-controls="pills-register" aria-selected="false">Register</a>
+          </li>
+        </ul>
+        <!-- Pills navs -->
+
+        <!-- Pills content -->
+        <div class="tab-content">
+          <!-- LOGIN -->
+          <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+            <form>
+
+              <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Email">
+                                    <label for="name">Your Email</label>
+                                </div>
+
+
+                                 <div class="form-floating mb-4">
+                                    <input type="text" class="form-control" id="password" placeholder="Your Password">
+                                    <label for="password">Your Password</label>
+                                </div>
+
+              <div class="row mb-4">
+                <div class="col-md-6 d-flex justify-content-center">
+                  <div class="form-check mb-3 mb-md-0">
+                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                    <label class="form-check-label" for="loginCheck"> Remember me </label>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                  <a href="#!" style="color: #011A41 !important;">Forgot password?</a>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block mb-4 w-100 p-2">Sign in</button>
+            </form>
+          </div>
+
+          <!-- REGISTER -->
+          <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+  <form>
+    <div class="form-floating mb-4">
+      <input type="text" class="form-control" id="sEmail" placeholder="Your Email">
+      <label for="sEmail">Your Email</label>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="form-floating mb-4">
+          <input type="password" class="form-control" id="spassword" placeholder="Your Password">
+          <label for="spassword">Your Password</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-floating mb-4">
+          <input type="text" class="form-control" id="srpassword" placeholder="Re Enter Password">
+          <label for="srpassword">Re Enter Password</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-check d-flex justify-content-center mb-4">
+      <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked />
+      <label class="form-check-label" for="registerCheck" style="color: #011A41 !important;">
+        I have read and agree to the terms
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block mb-3 w-100 p-2">Sign up</button>
+  </form>
+</div>
+        </div>
+        <!-- Pills content -->
+
+      </div>
+    </div>
+  </div>
+</div>

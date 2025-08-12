@@ -591,3 +591,36 @@ h6,
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
+
+
+  /* Increase modal width */
+  #exampleModal .modal-dialog {
+    max-width: 600px; /* default is ~500px */
+  }
+
+
+
+  #exampleModal .modal-content {
+  background: rgba(255, 255, 255, 0.548); /* Transparent white */
+  backdrop-filter: blur(10px); /* Blur strength */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+#exampleModal .form-control {
+  background: rgba(255, 255, 255, 0.2); /* same transparency as modal */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #011A41; /* white text */
+}
+
+#exampleModal .form-control::placeholder {
+  color: #011A41; /* softer placeholder */
+}
+
+#exampleModal label {
+  color: #355EFC; /* make labels visible on transparent background */
+}

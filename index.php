@@ -31,84 +31,22 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    
 </head>
 
-<body>
-    
 
 
     <!-- Spinner Start -->
-<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-  <div class="position-relative" style="width: 10rem; height: 10rem;">
-    <!-- Spinner Border -->
-    <div class="spinner-border text-primary w-100 h-100" role="status"></div>
-
-    <!-- Centered ATM Icon -->
-    <div class="position-absolute top-50 start-50 translate-middle text-primary">
-      <i class="fas fa-credit-card fa-4x"></i>  <!-- Font Awesome ATM-like icon -->
-    </div>
-  </div>
-</div>
+<?php require './Components/Spinner.php'; ?>
 <!-- Spinner End -->
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>103, Garden City, Minuwangoda Road, Ekala, Ja-Ela</small>
-                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 5.00 pm</small>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small onclick="window.location.href='mailto:helpdesk@maryland.lk'" style="cursor: pointer;">
-                <i class="fa fa-envelope text-primary me-2"></i> helpdesk@maryland.lk
-                </small>
-
-                <small class="ms-4" onclick="window.location.href='tel:+94112233744'" style="cursor: pointer;">
-                <i class="fa fa-phone-alt text-primary me-2"></i> +94 112 - 233 744
-                </small>
-            </div>
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <img src="./img/logo.png" width="150px">
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="404.html" class="nav-item nav-link">About</a>
-                    <a href="404.html" class="nav-item nav-link">Services</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
-                        <div class="dropdown-menu border-light m-0">
-                            <a href="404.html" class="dropdown-item">VTM</a>
-                            <a href="404.html" class="dropdown-item">CDK</a>
-                            <a href="404.html" class="dropdown-item">Scanners</a>
-                            <a href="404.html" class="dropdown-item">Others</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-facebook-f text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-linkedin-in text-primary"></small>
-                    </a>
-
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-instagram text-primary"></small>
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <?php require './Components/Navbar.php'; ?>
     <!-- Navbar End -->
+
+
 
 
    
@@ -637,65 +575,25 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>103, Garden City, Minuwangoda Road, Ekala,Ja-Ela</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+94 112 - 233 744</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>helpdesk@maryland.lk</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Customer Support</a>
-                    <a class="btn btn-link" href="">Remote Monitoring</a>
-                    <a class="btn btn-link" href="">Scanner Maintenance</a>
-                    <a class="btn btn-link" href="">Consultancy</a>
-                    <a class="btn btn-link" href="">Backup and Recovery</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Privacy policy</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php require './Components/Footer.php'; ?>
     <!-- Footer End -->
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">MCS Computer Systems</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    Designed  <a class="border-bottom" href="#">@2025</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php require './Components/CopyRight.php'; ?>
     <!-- Copyright End -->
+
+
+
+<!-- login Model -->
+
+<?php require './Components/loginModel.php'; ?>
+
+
+ <!-- end of login model -->
+
+
+
 
 
     <!-- Back to Top -->
