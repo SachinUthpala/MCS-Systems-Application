@@ -624,3 +624,18 @@ h6,
 #exampleModal label {
   color: #355EFC; /* make labels visible on transparent background */
 }
+
+
+
+.btn-google{
+    background-color: transparent !important;
+    border: 1px solid #011A41 !important;
+    color: #011A41 !important;
+}
+
+.btn-google:hover{
+    transition: 0.5s ;
+    background-color: #011A41 !important;
+    border: 1px solid #011A41 !important;
+    color: #ffffff !important;
+}

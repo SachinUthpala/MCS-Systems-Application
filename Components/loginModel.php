@@ -1,10 +1,7 @@
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" >
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">SignIn / SignUp To MCS</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
       <div class="modal-body" style="background-color: transparent !important;">
 
         <!-- Pills navs -->
@@ -25,7 +22,8 @@
           <!-- LOGIN -->
           <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
             <form>
-
+<button class="btn btn-google btn-block mb-2 w-100 p-2"><i class="fab fa-google"></i> Continive With Google</button>
+<p class="text-center">- OR -</p>
               <div class="form-floating mb-2">
                                     <input type="text" class="form-control" id="name" placeholder="Your Email">
                                     <label for="name">Your Email</label>
@@ -55,6 +53,8 @@
 
           <!-- REGISTER -->
           <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+            <button class="btn btn-google btn-block mb-2 w-100 p-2"><i class="fab fa-google"></i> Continive With Google</button>
+<p class="text-center">- OR -</p>
   <form>
     <div class="form-floating mb-4">
       <input type="text" class="form-control" id="sEmail" placeholder="Your Email">
