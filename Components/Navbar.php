@@ -61,10 +61,10 @@
 
   <!-- Dropdown menu -->
   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-    <li><a class="dropdown-item" href="profile.php">My Profile</a></li>
-    <li><a class="dropdown-item" href="settings.php">Settings</a></li>
+    <li><a class="dropdown-item" href="./MyProfile.php">My Profile</a></li>
+    <li><a class="dropdown-item" href="./MySettings.php">Settings</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+    <li><a class="dropdown-item" href="./BackEnd/logOut.php">Logout</a></li>
   </ul>
 </div>
         <?php else: ?>
