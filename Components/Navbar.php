@@ -1,6 +1,6 @@
  <?php
-  $currentPage = basename($_SERVER['PHP_SELF']);
-  ?>
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
 
 
 
@@ -47,7 +47,7 @@
 
          <a href="contact.php" class="nav-item nav-link <?php if ($currentPage == 'contact.php') echo 'active'; ?>">Contact</a>
        </div>
-       <div class="d-lg-flex ms-4">
+       <div class="d-lg-flex ms-4" style="align-items: center !important;">
        <?php if (!empty($_SESSION['ProfilePic'])): ?>
         <div class="dropdown">
 
