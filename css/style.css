@@ -647,3 +647,24 @@ h6,
     border: 1px solid #011A41 !important;
     color: #ffffff !important;
 }
+
+
+
+/* Show dropdown on hover */
+#profileDropdownHover:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust if necessary */
+  }
+
+  /* Optional: smooth fade effect */
+  #profileDropdownHover .dropdown-menu {
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    display: block; /* Keep block to allow transition */
+    pointer-events: none;
+  }
+
+  #profileDropdownHover:hover .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+  }

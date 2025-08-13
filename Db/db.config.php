@@ -3,9 +3,9 @@
 
 
 $serverName = "localhost"; // Remove 'https://' and any protocol prefixes
-$userName = "root";
-$password = "";
-$dbName = "mcssystems";
+$userName = "root";//u115172255_mcsUser 
+$password = "";//c8M8UMp@&
+$dbName = "mcssystems";//u115172255_MCS
 
 try {
     $pdo = new PDO("mysql:host=$serverName;dbname=$dbName", $userName, $password);

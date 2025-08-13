@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +33,9 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- tostify js -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -31,6 +43,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+     <!-- tostify -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     
 </head>
@@ -40,6 +55,11 @@
     <!-- Spinner Start -->
 <?php require './Components/Spinner.php'; ?>
 <!-- Spinner End -->
+
+
+<!-- Navbar Start -->
+<?php require './Components/Tostify.php'; ?>
+    <!-- Navbar End -->
 
 
     <!-- Navbar Start -->
@@ -284,7 +304,7 @@
 
 
     <!-- logo slider -->
-     <div class="container-fluid  py-5">
+    <div class="container-fluid  py-5">
         <div class="container py-2">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Clients</p>
@@ -616,6 +636,8 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./js/partical.js"></script>
     <script src="./js/LogoSlider.js"></script>
+
+   
 
 
     <!-- Template Javascript -->

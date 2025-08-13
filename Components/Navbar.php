@@ -48,9 +48,30 @@
          <a href="contact.php" class="nav-item nav-link <?php if ($currentPage == 'contact.php') echo 'active'; ?>">Contact</a>
        </div>
        <div class="d-lg-flex ms-4">
-         <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
-           Sign In Now
-         </button>
+       <?php if (!empty($_SESSION['ProfilePic'])): ?>
+        <div class="dropdown">
+
+        <!-- Dropdown wrapper -->
+<div class="dropdown" id="profileDropdownHover">
+  <!-- Profile picture as dropdown toggle -->
+  <a class="dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <img src="<?php echo htmlspecialchars($_SESSION['ProfilePic'], ENT_QUOTES, 'UTF-8'); ?>" 
+         style="border-radius: 100%;" width="50" height="50" alt="Profile Picture">
+  </a>
+
+  <!-- Dropdown menu -->
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+    <li><a class="dropdown-item" href="profile.php">My Profile</a></li>
+    <li><a class="dropdown-item" href="settings.php">Settings</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+  </ul>
+</div>
+        <?php else: ?>
+            <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Sign In Now
+            </button>
+        <?php endif; ?>
        </div>
 
        <div class="d-none d-lg-flex ms-2">
