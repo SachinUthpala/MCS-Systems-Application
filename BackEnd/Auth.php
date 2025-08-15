@@ -10,53 +10,45 @@ function sanitizeInput($data) {
 }
 
 
-if(isset($_POST['login'])){
+if (isset($_POST['login'])) {
 
-   
-    // --- CSRF Token Validation ---
     if (!isset($_POST['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
         die("CSRF token validation failed.");
     }
 
-    // Sanitize and validate
     $userEmail = sanitizeInput($_POST['userEmail']);
     $password  = trim($_POST['userPassword']);
 
-    // Fetch user from DB
-    $sql = "SELECT userId, userName, userEmail, userPassword FROM users WHERE userEmail = :userEmail LIMIT 1";
+    $sql = "SELECT userId, userName, userEmail, userPassword, AdminAccess, ProfilePic 
+            FROM users 
+            WHERE userEmail = :userEmail 
+            LIMIT 1";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([':userEmail' => $userEmail]);
 
     if ($stmt->rowCount() === 1) {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
-        // Verify password
         if (password_verify($password, $user['userPassword'])) {
-            // Login success → store session data
-            $_SESSION['userLoggedIn'] = true;
+            $_SESSION['userLoggedIn'] = 1;
             $_SESSION['userId']       = $user['userId'];
             $_SESSION['userName']     = $user['userName'];
             $_SESSION['userEmail']    = $user['userEmail'];
-            $_SESSION['AdminAccess'] = $user['AdminAccess'];
-            $_SESSION['ProfilePic'] = $user['ProfilePic'];
-               
-            // Redirect to dashboard
+            $_SESSION['AdminAccess']  = $user['AdminAccess'];
+            $_SESSION['ProfilePic']   = $user['ProfilePic'];
+
             $_SESSION['loginSuccess'] = 1;
             header('Location: ../index.php');
             exit();
         } else {
-            // Invalid password
             $_SESSION['loginError'] = 1;
             header('Location: ../index.php');
             exit();
         }
     } else {
-        // User not found
         $_SESSION['loginError'] = 1;
         header('Location: ../index.php');
         exit();
     }
-
-
 }else if(isset($_POST['register'])){
 
     // --- CSRF Token Validation ---

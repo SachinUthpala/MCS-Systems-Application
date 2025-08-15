@@ -1,5 +1,5 @@
  <?php
-$currentPage = basename($_SERVER['PHP_SELF']);
+    $currentPage = basename($_SERVER['PHP_SELF']);
 ?>
 
 
@@ -45,6 +45,8 @@ $currentPage = basename($_SERVER['PHP_SELF']);
            </div>
          </div>
 
+         <a href="404.php" class="nav-item nav-link <?php if ($currentPage == '404.php') echo 'active'; ?>">Drivers</a>
+
          <a href="contact.php" class="nav-item nav-link <?php if ($currentPage == 'contact.php') echo 'active'; ?>">Contact</a>
        </div>
        <div class="d-lg-flex ms-4" style="align-items: center !important;">
@@ -61,8 +63,12 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
   <!-- Dropdown menu -->
   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-    <li><a class="dropdown-item" href="./MyProfile.php">My Profile</a></li>
-    <li><a class="dropdown-item" href="./MySettings.php">Settings</a></li>
+    <li><a class="dropdown-item" href="./MyProfile.php">My Dashboard</a></li>
+    <li><a class="dropdown-item" href="./ProfileSettings.php">Profile Settings</a></li>
+
+    <!-- admin Access -->
+   <li><a class="dropdown-item" style="<?php if($_SESSION['AdminAccess'] != 1) {echo 'display:none;' ;} ?>" href="./Admin/index.php">Admin Settings</a></li>
+    
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="./BackEnd/logOut.php">Logout</a></li>
   </ul>

@@ -609,7 +609,7 @@ h6,
 
 
   #exampleModal .modal-content {
-  background: rgba(255, 255, 255, 0.548); /* Transparent white */
+  background: rgba(255, 255, 255, 0.644); /* Transparent white */
   backdrop-filter: blur(10px); /* Blur strength */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -618,9 +618,8 @@ h6,
 
 
 #exampleModal .form-control {
-  background: rgba(255, 255, 255, 0.2); /* same transparency as modal */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0) !important;  /* same transparency as modal */
+  
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #011A41; /* white text */
 }
@@ -630,7 +629,7 @@ h6,
 }
 
 #exampleModal label {
-  color: #355EFC; /* make labels visible on transparent background */
+  color: #0033ff; /* make labels visible on transparent background */
 }
 
 
@@ -668,3 +667,7 @@ h6,
     opacity: 1;
     pointer-events: auto;
   }
+
+
+
+
