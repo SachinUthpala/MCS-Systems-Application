@@ -23,7 +23,7 @@
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
                   data-feather="users"></i><span>User Changes</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Add User</a></li>
+                <li><a class="nav-link" href="./AddUser.php">Add User</a></li>
                 <li><a class="nav-link" href="widget-data.html">Update User</a></li>
                 <li><a class="nav-link" href="widget-data.html">Delete User</a></li>
               </ul>
