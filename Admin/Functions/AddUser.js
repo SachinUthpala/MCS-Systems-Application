@@ -1,7 +1,8 @@
 document.getElementById('AddUserForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
-  const formData = new FormData(this);
+  const form = this;
+  const formData = new FormData(form);
 
   fetch('./BackEnd/db.AddUser.php', {
     method: 'POST',
@@ -17,6 +18,11 @@ document.getElementById('AddUserForm').addEventListener('submit', function(e) {
       backgroundColor: data.status === "success" ? "#355EFC" : "#f44336",
       close: true
     }).showToast();
+
+    // ✅ Clear form if success
+    if (data.status === "success") {
+      form.reset();
+    }
   })
   .catch(error => {
     Toastify({
