@@ -63,6 +63,77 @@ $smtp->execute();
             <div class="main-content">
                 <section class="section">
 
+                    <div class="row ">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="card-statistic-4">
+                                    <div class="align-items-center justify-content-between">
+                                        <div class="row ">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                                                <div class="card-content">
+                                                    <h5 class="font-15">All Users</h5>
+                                                    <h2 class="mb-3 font-18">258</h2>
+                                                    <p class="mb-0"><span class="col-green">10%</span> From Total</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                                                <div class="banner-img">
+                                                    <img src="assets/img/banner/1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="card-statistic-4">
+                                    <div class="align-items-center justify-content-between">
+                                        <div class="row ">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                                                <div class="card-content">
+                                                    <h5 class="font-15"> Admins</h5>
+                                                    <h2 class="mb-3 font-18">1,287</h2>
+                                                    <p class="mb-0"><span class="col-orange">09%</span> From Total</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                                                <div class="banner-img">
+                                                    <img src="assets/img/banner/2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="card-statistic-4">
+                                    <div class="align-items-center justify-content-between">
+                                        <div class="row ">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                                                <div class="card-content">
+                                                    <h5 class="font-15">Super Admins</h5>
+                                                    <h2 class="mb-3 font-18">128</h2>
+                                                    <p class="mb-0"><span class="col-green">18%</span>
+                                                        From Total</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                                                <div class="banner-img">
+                                                    <img src="assets/img/banner/3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                     <div class="section-body">
                         <div class="row">
                             <div class="col-12">
@@ -93,12 +164,12 @@ $smtp->execute();
                                                         <tr>
                                                             <td><?php echo $user['userName']; ?></td>
                                                             <td><?php echo $user['userEmail']; ?></td>
-                                                            <td>###</td>
+                                                            <td><span class="text-danger" style="font-weight: bold;">Soory! Cannot Show</span></td>
                                                             <td>
                                                                 <img alt="image" src="<?php echo '../' . $user['ProfilePic']; ?>" width="35">
                                                             </td>
                                                             <td>
-                                                                <div class="badge badge-success badge-shadow">
+                                                                <div class="badge badge-warning badge-shadow">
                                                                     <?php echo ($user['AdminAccess'] == 1) ? 'Admin' : 'Super Admin'; ?>
                                                                 </div>
                                                             </td>
@@ -166,6 +237,8 @@ $smtp->execute();
     <script src="assets/js/custom.js"></script>
 
     <!-- Page specific script -->
+
+    <script src="./Functions/updatUserMain.js"></script>
 
 
 </body>

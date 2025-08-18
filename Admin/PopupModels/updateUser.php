@@ -22,8 +22,10 @@
                     </div>
 
                     <div class="form-group col-md-6 col-12">
-                        <label>User Password</label>
-                        <input type="text" class="form-control" name="userPassword" id="modalUserPassword">
+                        <label>
+                            <input type="checkbox" name="passwordCheckbox" id="togglePasswordUpdate"> Need to update password
+                        </label>
+                        <input type="text" class="form-control mt-2" name="userPassword" id="modalUserPassword" disabled>
                     </div>
 
                     <div class="form-group col-md-6 col-12">

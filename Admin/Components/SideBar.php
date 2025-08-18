@@ -7,13 +7,13 @@
     <ul class="sidebar-menu">
       <li class="menu-header">Main</li>
       <li class="dropdown active">
-        <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+        <a href="index.php" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
       </li>
       <li class="dropdown">
         <a href="#" class="menu-toggle nav-link has-dropdown"><i
             data-feather="briefcase"></i><span>Products Changes</span></a>
         <ul class="dropdown-menu">
-          <li><a class="nav-link" href="widget-chart.html">Add Products</a></li>
+          <li><a class="nav-link" href="./AddProduct.php">Add Products</a></li>
           <li><a class="nav-link" href="widget-data.html">Update Products</a></li>
           <li><a class="nav-link" href="widget-data.html">Delete Products</a></li>
         </ul>
@@ -25,9 +25,10 @@
         <ul class="dropdown-menu">
           <li><a class="nav-link" href="./AddUser.php">Add User</a></li>
           <li><a class="nav-link" href="./UpdateUser.php">Update User</a></li>
-          <li><a class="nav-link" href="widget-data.html">Delete User</a></li>
+          <li><a class="nav-link" href="./DeleteUser.php">Delete User</a></li>
         </ul>
       </li>
     </ul>
   </aside>
 </div>
+
